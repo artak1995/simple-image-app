@@ -1,0 +1,10 @@
+= image_tag @pic.image.url(:large)
+%h1= 'Title: ' + @pic.title
+%p= 'Description: ' + @pic.description
+%p= 'Picture uploader: ' + @pic.user.email
+=
+
+=link_to 'Add Comment', new_comment_path(pic_id: @pic.id),:controller => 'comments'
+=link_to 'Back', root_path
+=link_to 'Edit', edit_pic_path
+=link_to 'Delete', pic_path, method: :delete, data: { confirm: 'Are you sure?'}

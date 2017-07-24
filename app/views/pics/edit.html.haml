@@ -1,0 +1,12 @@
+.col-md-8.col-md-offset-2
+  .row
+    .panel.panel-default
+      .panel-heading
+        %h1 Edit Picture
+      .panel-body
+        .current_image
+          %strong.center Current Picture
+          = image_tag @pic.image.url(:medium)
+        = render 'form'
+
+        = link_to 'back', root_path
