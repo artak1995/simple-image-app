@@ -3,9 +3,7 @@
 This web app is built with RoR
 
 
-* Sorry, I didn't have time to style the app, I just noticed the email today
-
-* I implement all of the functions required
+* I didn't have time to style the app yet
 
 * One thing left, I forgot to store the user name in the comment model
 
